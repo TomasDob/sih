@@ -35,6 +35,15 @@ const routes: Routes = [
                 ]
             },
             {
+                path: 'leaks',
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../leaks/leaks.module#LeaksPageModule'
+                    }
+                ]
+            },
+            {
                 path: 'terms',
                 children: [
                     {
