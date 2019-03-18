@@ -17,6 +17,15 @@ const routes: Routes = [
                 ]
             },
             {
+                path: 'calculate',
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../calculate/calculate.module#CalculatePageModule'
+                    }
+                ]
+            },
+            {
                 path: 'measure',
                 children: [
                     {
@@ -26,29 +35,20 @@ const routes: Routes = [
                 ]
             },
             {
-                path: 'tab1',
+                path: 'terms',
                 children: [
                     {
                         path: '',
-                        loadChildren: '../tab1/tab1.module#Tab1PageModule'
+                        loadChildren: '../terms/terms.module#TermsPageModule'
                     }
                 ]
             },
             {
-                path: 'tab2',
+                path: 'contact',
                 children: [
                     {
                         path: '',
-                        loadChildren: '../tab2/tab2.module#Tab2PageModule'
-                    }
-                ]
-            },
-            {
-                path: 'tab3',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: '../tab3/tab3.module#Tab3PageModule'
+                        loadChildren: '../contact/contact.module#ContactPageModule'
                     }
                 ]
             },
