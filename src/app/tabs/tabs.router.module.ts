@@ -29,6 +29,30 @@ const routes: Routes = [
                 path: 'measure',
                 children: [
                     {
+                        path: 'p1',
+                        loadChildren: '../p1/p1.module#P1PageModule'
+                    },
+                    {
+                        path: 'p2',
+                        loadChildren: '../p2/p2.module#P2PageModule'
+                    },
+                    {
+                        path: 'p3',
+                        loadChildren: '../p3/p3.module#P3PageModule'
+                    },
+                    {
+                        path: 'p4',
+                        loadChildren: '../p4/p4.module#P4PageModule'
+                    },
+                    {
+                        path: 'p5',
+                        loadChildren: '../p5/p5.module#P5PageModule'
+                    },
+                    {
+                        path: 'p6',
+                        loadChildren: '../p6/p6.module#P6PageModule'
+                    },
+                    {
                         path: '',
                         loadChildren: '../measure/measure.module#MeasurePageModule'
                     }
