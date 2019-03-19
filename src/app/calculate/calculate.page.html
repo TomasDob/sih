@@ -6,6 +6,42 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content padder="false">
-
+<ion-content>
+    <ion-list>
+        <ion-list-header>Major criteria</ion-list-header>
+        <ion-item>
+            <ion-label>Engorgement venous sinus</ion-label>
+            <ion-toggle [(ngModel)]="p1"></ion-toggle>
+        </ion-item>
+        <ion-item>
+            <ion-label>Pachymeningeal enhancement</ion-label>
+            <ion-toggle [(ngModel)]="p2"></ion-toggle>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label>Suprasellar cistern</ion-label>
+            <ion-note slot="end" color="primary">{{p3}} mm</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-range [(ngModel)]="p3" min="0" max="10" step="1" snaps="true"></ion-range>
+        </ion-item>
+        <ion-list-header>Minor criteria</ion-list-header>
+        <ion-item>
+            <ion-label>Subdural fluid collection</ion-label>
+            <ion-toggle [(ngModel)]="p4"></ion-toggle>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label>Prepontine cistern</ion-label>
+            <ion-note slot="end" color="primary">{{p5}} mm</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-range [(ngModel)]="p5" min="0" max="10" step="1" snaps="true"></ion-range>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label>Mamillopontine distance</ion-label>
+            <ion-note slot="end" color="primary">{{p6}} mm</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-range [(ngModel)]="p6" min="0" max="10" step="0.5" snaps="true"></ion-range>
+        </ion-item>
+    </ion-list>
 </ion-content>
