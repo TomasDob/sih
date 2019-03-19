@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { CalculatePage } from './calculate.page';
 
 @NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    RouterModule.forChild([{ path: '', component: CalculatePage }])
-  ],
-  declarations: [CalculatePage]
+    imports: [
+        IonicModule,
+        CommonModule,
+        FormsModule,
+        RouterModule.forChild([{ path: '', component: CalculatePage }])
+    ],
+    declarations: [CalculatePage]
 })
-export class CalculatePageModule { }
+export class CalculatePageModule {
+
+}

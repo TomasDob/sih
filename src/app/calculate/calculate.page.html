@@ -38,10 +38,14 @@
         </ion-item>
         <ion-item lines="none">
             <ion-label>Mamillopontine distance</ion-label>
-            <ion-note slot="end" color="primary">{{p6}} mm</ion-note>
+            <ion-note slot="end" color="primary">{{p6.toFixed(1)}} mm</ion-note>
         </ion-item>
         <ion-item>
             <ion-range [(ngModel)]="p6" min="0" max="10" step="0.5" snaps="true"></ion-range>
         </ion-item>
     </ion-list>
+    <ion-button color="primary" expand="full" (click)="onCalculateClick()">
+        <ion-icon slot="start" name="calculator"></ion-icon>
+        Calculate score
+    </ion-button>
 </ion-content>
