@@ -1,6 +1,8 @@
 {
   "name": "sih",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular",
   "id": "a357ccee"
 }
