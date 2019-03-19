@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'calculate',
@@ -13,6 +14,9 @@ export class CalculatePage {
     p5 = 0;
     p6 = 0;
 
+    constructor(private router: Router) {
+
+    }
 
     score(p1: Boolean, p2: Boolean, p3: Number, p4: Boolean, p5: Number, p6: Number) {
         let s = 0;
@@ -39,6 +43,7 @@ export class CalculatePage {
 
     onCalculateClick() {
         const score = this.score(this.p1, this.p2, this.p3, this.p4, this.p5, this.p6);
-        console.log(score)
+        console.log(score);
+        this.router.navigate(['tabs/calculate/score', { score }]);
     }
 }

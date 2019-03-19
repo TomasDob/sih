@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/calculate"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            SIH Score
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="centered fade-in" id="score">
+        <div id="score-content">
+            <div id="score-content-value">{{score}}</div>
+        </div>
+    </div>
+
+    <ion-grid>
+        <ion-row style="text-align: center; font-weight: bold">
+            <ion-col style="background-color: chartreuse;">
+                <h3>Low</h3>
+                ≤ 2
+            </ion-col>
+            <ion-col style="background-color:gold;">
+                <h3>Intermediate</h3>
+                3-4
+            </ion-col>
+            <ion-col style="background-color:tomato;">
+                <h3>High</h3>
+                ≥ 5
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

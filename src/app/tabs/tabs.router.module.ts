@@ -20,6 +20,10 @@ const routes: Routes = [
                 path: 'calculate',
                 children: [
                     {
+                        path: 'score',
+                        loadChildren: '../score/score.module#ScorePageModule'
+                    },
+                    {
                         path: '',
                         loadChildren: '../calculate/calculate.module#CalculatePageModule'
                     }
