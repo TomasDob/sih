@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">sih</string>
+    <string name="app_name">SIH-Score</string>
     <string name="title_activity_main">sih</string>
     <string name="package_name">io.ionic.starter</string>
     <string name="fileprovider_authority">io.ionic.starter.fileprovider</string>
