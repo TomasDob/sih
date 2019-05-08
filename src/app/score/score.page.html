@@ -11,12 +11,14 @@
 
 <ion-content>
 
-    <div class="centered fade-in" id="score">
+    <div [ngClass]="level" class="centered fade-in" id="score">
         <div id="score-content">
             <div id="score-content-value">{{score}}</div>
         </div>
     </div>
-
+    <h1 style="text-align: center; padding: 0 1em 2em 1em">
+        The probability of a spinal CSF leak is <b style="text-transform: capitalize">{{level}}</b>
+    </h1>
     <ion-grid>
         <ion-row style="text-align: center; font-weight: bold">
             <ion-col style="background-color: chartreuse;">

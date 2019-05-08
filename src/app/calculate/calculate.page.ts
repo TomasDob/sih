@@ -9,10 +9,10 @@ import { Router } from '@angular/router';
 export class CalculatePage {
     p1 = false;
     p2 = false;
-    p3 = 0;
+    p3 = 10;
     p4 = false;
-    p5 = 0;
-    p6 = 0;
+    p5 = 10;
+    p6 = 10;
 
     constructor(private router: Router) {
 

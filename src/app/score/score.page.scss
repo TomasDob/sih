@@ -19,6 +19,18 @@
     margin-bottom: 5em;
 }
 
+#score.low {
+    background: chartreuse
+}
+
+#score.intermediate {
+    background: gold
+}
+
+#score.high {
+    background: tomato
+}
+
 #score-content {
     left: 50%;
     position: absolute;
@@ -31,11 +43,11 @@
 
 #score-content-value {
     font-size: 15rem;
-}
-
-#score-content-percentage {
-    font-size: 3rem;
-    margin-top: 1rem;
+    text-shadow:
+        -1px -1px 0 #999,
+        1px -1px 0 #999,
+        -1px 1px 0 #999,
+        1px 1px 0 #999;
 }
 
 @media (min-width: 400px) {
@@ -43,13 +55,11 @@
         height: 350px;
         width: 350px;
     }
+
     #score-content-value {
         font-size: 21rem;
     }
-    #score-content-percentage {
-        font-size: 3rem;
-        margin-top: 1rem;
-    }
+
 }
 
 @media (min-width: 480px) {
@@ -57,13 +67,11 @@
         height: 400px;
         width: 400px;
     }
+
     #score-content-value {
         font-size: 22rem;
     }
-    #score-content-percentage {
-        font-size: 4rem;
-        margin-top: 1rem;
-    }
+
 }
 
 /**
@@ -81,36 +89,43 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 @-moz-keyframes fadeIn {
+
     /* Firefox */
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeIn {
+
     /* Safari and Chrome */
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 @-o-keyframes fadeIn {
+
     /* Opera */
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
