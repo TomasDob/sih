@@ -63,15 +63,6 @@ const routes: Routes = [
                 ]
             },
             {
-                path: 'leaks',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: '../leaks/leaks.module#LeaksPageModule'
-                    }
-                ]
-            },
-            {
                 path: 'terms',
                 children: [
                     {
@@ -81,11 +72,11 @@ const routes: Routes = [
                 ]
             },
             {
-                path: 'contact',
+                path: 'about',
                 children: [
                     {
                         path: '',
-                        loadChildren: '../contact/contact.module#ContactPageModule'
+                        loadChildren: '../about/about.module#AboutPageModule'
                     }
                 ]
             },
