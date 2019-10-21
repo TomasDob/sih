@@ -9,16 +9,16 @@ import { Router } from '@angular/router';
 export class CalculatePage {
     p1 = false;
     p2 = false;
-    p3 = 10;
+    p3 = false;
     p4 = false;
-    p5 = 10;
-    p6 = 10;
+    p5 = false;
+    p6 = false;
 
     constructor(private router: Router) {
 
     }
 
-    score(p1: Boolean, p2: Boolean, p3: Number, p4: Boolean, p5: Number, p6: Number) {
+    score(p1: Boolean, p2: Boolean, p3: Boolean, p4: Boolean, p5: Boolean, p6: Boolean) {
         let s = 0;
         if (p1) {
             s += 2;
@@ -26,16 +26,16 @@ export class CalculatePage {
         if (p2) {
             s += 2;
         }
-        if (p3 <= 4) {
+        if (!p3) {
             s += 2;
         }
         if (p4) {
             s += 1;
         }
-        if (p5 <= 5) {
+        if (!p5) {
             s += 1;
         }
-        if (p6 <= 6.5) {
+        if (!p6) {
             s += 1;
         }
         return s;

@@ -8,10 +8,6 @@
 
 <ion-content>
     <ion-list>
-        <ion-list-header>
-            <h3>Major criteria
-            </h3>
-        </ion-list-header>
         <ion-item>
             <ion-label>Engorgement venous sinus</ion-label>
             <ion-toggle [(ngModel)]="p1"></ion-toggle>
@@ -20,33 +16,21 @@
             <ion-label>Pachymeningeal enhancement</ion-label>
             <ion-toggle [(ngModel)]="p2"></ion-toggle>
         </ion-item>
-        <ion-item lines="none">
-            <ion-label>Suprasellar cistern</ion-label>
-            <ion-note slot="end" color="primary">{{p3.toFixed(1)}} mm</ion-note>
-        </ion-item>
-        <ion-item>
-            <ion-range [(ngModel)]="p3" min="0" max="10" step="0.5" snaps="true"></ion-range>
-        </ion-item>
-        <ion-list-header>
-            <h3>Minor criteria</h3>
-        </ion-list-header>
         <ion-item>
             <ion-label>Subdural fluid collection</ion-label>
             <ion-toggle [(ngModel)]="p4"></ion-toggle>
         </ion-item>
-        <ion-item lines="none">
+        <ion-item>
+            <ion-label>Suprasellar cistern</ion-label>
+            ≤ 4.0mm<ion-toggle [(ngModel)]="p3"></ion-toggle><span>> 4.0mm</span>
+        </ion-item>
+        <ion-item>
             <ion-label>Prepontine cistern</ion-label>
-            <ion-note slot="end" color="primary">{{p5.toFixed(1)}} mm</ion-note>
+            ≤ 5.0mm <ion-toggle [(ngModel)]="p5"></ion-toggle><span>> 5.0mm</span>
         </ion-item>
         <ion-item>
-            <ion-range [(ngModel)]="p5" min="0" max="10" step="0.5" snaps="true"></ion-range>
-        </ion-item>
-        <ion-item lines="none">
             <ion-label>Mamillopontine distance</ion-label>
-            <ion-note slot="end" color="primary">{{p6.toFixed(1)}} mm</ion-note>
-        </ion-item>
-        <ion-item>
-            <ion-range [(ngModel)]="p6" min="0" max="10" step="0.5" snaps="true"></ion-range>
+            ≤ 6.5mm<ion-toggle [(ngModel)]="p6"></ion-toggle><span>> 6.5mm</span>
         </ion-item>
     </ion-list>
     <ion-button color="primary" expand="block" (click)="onCalculateClick()">
