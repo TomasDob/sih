@@ -9,6 +9,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "ghpages": "ng build --prod -- --base-href https://robertsasak.github.io/sih/ && npx angular-cli-ghpages --branch=gh-pages --dir=www",
     "e2e": "ng e2e"
   },
   "private": true,
