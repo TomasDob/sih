@@ -1,2 +1,2 @@
-# sih
+# SIH Score
 SIH Score
