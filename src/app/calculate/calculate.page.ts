@@ -26,16 +26,16 @@ export class CalculatePage {
         if (p2) {
             s += 2;
         }
-        if (!p3) {
+        if (p3) {
             s += 2;
         }
         if (p4) {
             s += 1;
         }
-        if (!p5) {
+        if (p5) {
             s += 1;
         }
-        if (!p6) {
+        if (p6) {
             s += 1;
         }
         return s;
@@ -43,7 +43,6 @@ export class CalculatePage {
 
     onCalculateClick() {
         const score = this.score(this.p1, this.p2, this.p3, this.p4, this.p5, this.p6);
-        console.log(score);
         this.router.navigate(['tabs/calculate/score', { score }]);
     }
 }

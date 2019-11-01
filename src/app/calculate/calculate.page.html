@@ -20,18 +20,49 @@
             <ion-label>Subdural fluid collection</ion-label>
             <ion-toggle [(ngModel)]="p4"></ion-toggle>
         </ion-item>
-        <ion-item>
-            <ion-label>Suprasellar cistern</ion-label>
-            ≤ 4.0mm<ion-toggle [(ngModel)]="p3"></ion-toggle><span>> 4.0mm</span>
-        </ion-item>
-        <ion-item>
-            <ion-label>Prepontine cistern</ion-label>
-            ≤ 5.0mm <ion-toggle [(ngModel)]="p5"></ion-toggle><span>> 5.0mm</span>
-        </ion-item>
-        <ion-item>
-            <ion-label>Mamillopontine distance</ion-label>
-            ≤ 6.5mm<ion-toggle [(ngModel)]="p6"></ion-toggle><span>> 6.5mm</span>
-        </ion-item>
+
+        <ion-radio-group [(ngModel)]="p3">
+            <ion-list-header>
+                Suprasellar cistern
+            </ion-list-header>
+            <ion-item>
+              <ion-label>≤ 4.0mm</ion-label>
+              <ion-radio [value]="true"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>> 4.0mm</ion-label>
+              <ion-radio [value]="false"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+
+        <ion-radio-group [(ngModel)]="p5">
+            <ion-list-header>
+                Prepontine cistern
+            </ion-list-header>
+            <ion-item>
+              <ion-label>≤ 5.0mm</ion-label>
+              <ion-radio [value]="true"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>> 5.0mm</ion-label>
+              <ion-radio [value]="false"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+
+        <ion-radio-group [(ngModel)]="p6">
+            <ion-list-header>
+                Mamillopontine distance
+            </ion-list-header>
+            <ion-item>
+              <ion-label>≤ 6.5mm</ion-label>
+              <ion-radio [value]="true"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>> 6.5mm</ion-label>
+              <ion-radio [value]="false"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+
     </ion-list>
     <ion-button color="primary" expand="block" (click)="onCalculateClick()">
         <ion-icon slot="start" name="calculator"></ion-icon>
