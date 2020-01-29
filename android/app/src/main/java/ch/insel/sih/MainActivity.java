@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package ch.insel.sih;
 
 import android.os.Bundle;
 

@@ -1,6 +1,7 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "SIH-Score",
+  "appId": "ch.insel.sih",
+  "appName": "SIH - Score",
   "bundledWebRuntime": false,
-  "webDir": "www"
+  "webDir": "www",
+  "npmClient": "yarn"
 }
