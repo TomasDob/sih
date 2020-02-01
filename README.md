@@ -20,6 +20,7 @@ yarn build
 npx cap copy
 npx cap copy ios
 npx cap open ios
+cd ios && pod install && cd ..
 ```
 
 Opens Xcode from where one can release app to App Store.
