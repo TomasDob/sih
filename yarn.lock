@@ -877,10 +877,10 @@
   dependencies:
     tslib "^1.9.0"
 
-"@capacitor/ios@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-1.2.1.tgz#e1e9fe08319ed08ecf24622e842724357d0f3e45"
-  integrity sha512-AUUnvnAUomvviNPGX8kJbTjyA3hPyOpvZHbIA1VGiA864bNLsO3hkUnv6FTBF5/aKb5eCbj/y0CGmf947JzWGw==
+"@capacitor/ios@^2.0.0-beta.1":
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-2.0.0-beta.1.tgz#a995f1eb42149335f5b2cf90d7ab8792080dea3d"
+  integrity sha512-GCMsH2IpMaT+uciNA0dGrax6vE7nRtcrl6sF7C9eYfGelhBpkLg8uJV4JAkpvHfC0CXDYRAdqt7S70eIx7Eq0w==
 
 "@ionic-native/core@^5.15.1":
   version "5.15.1"
